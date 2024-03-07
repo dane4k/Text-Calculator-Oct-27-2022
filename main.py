@@ -1,14 +1,19 @@
 dictones = {1: 'один', 2: 'два', 3: 'три', 4: 'четыре', 5: 'пять', 6: 'шесть', 7: 'семь', 8: 'восемь', 9: 'девять',
             10: 'десять'}
+
 dicteleventotwenty = {11: 'одиннадцать', 12: 'двенадцать', 13: 'тринадцать', 14: 'четырнадцать', 15: 'пятнадцать',
                       16: 'шестнадцать', 17: 'семнадцать', 18: 'восемьнадцать', 19: 'девятнадцать', 20: 'двадцать'}
+
 dictthirtytoninety = {30: 'тридцать', 40: 'сорок', 50: 'пятьдесят', 60: 'шестьдесят', 70: 'семьдесят',
                       80: 'восемьдесят',
                       90: 'девяносто'}
+
 dict100 = {100: 'сто', 200: 'двести', 300: 'триста', 400: 'четыреста', 500: 'пятьсот', 600: 'шестьсот', 700: 'семьсот',
            800: 'восемьсот', 900: 'девятьсот'}
+
 dict1000 = {1000: 'одна тысяча', 2000: 'две тысячи', 3000: 'три тысячи', 4000: 'четыре тысячи', 5000: 'пять тысяч',
             6000: 'шесть тысяч', 7000: 'семь тысяч', 8000: 'восемь тысяч', 9000: 'девять тысяч', 10000: 'десять тысяч'}
+
 dictonesreversed = dict(zip(dictones.values(), dictones.keys()))  # перевернул для своего удобства
 dicteleventotwentyreversed = dict(zip(dicteleventotwenty.values(), dicteleventotwenty.keys()))
 dictthirtytoninetyreversed = dict(zip(dictthirtytoninety.values(), dictthirtytoninety.keys()))
@@ -132,4 +137,5 @@ if len(answerinsymbstr) == 1:  # если ответ - цифра
     if answerinsymbint[0] != 0:
         if answerinsymbint[0] in dictones:
             answerfinal.append(dictones[answerinsymbint[0]])
+                    
 print(' '.join(answerfinal))  # выводим ответ с помощью джойна
